@@ -69,7 +69,9 @@ When you overwrite these files, the overwriting is absolute: The new asset will 
 :::tip
 **Example**: If you would like to make Ghasts have higher health, simply create a new BP entity with the `minecraft:ghast` identifier, and all the behaviors required to make the ghast function.
 
-Remember, entity files do not merge together, so you will first need to copy/paste the entire BP Ghast file, and _then_ edit the health. Simply creating a `minecraft:ghast` with a high health component inside will not work.
+Remember, entity files do not merge together, so you will first need to copy/paste the entire BP Ghast file, and _then_ edit the health. Simply creating a `minecraft:ghast` with a high health component inside will not work
+
+But you understand this, just write on your empty code "runtime_identifier": "minecraft:ghast" in the code and set it to any component "minecraft: health": int, this way you can seriously reduce the file size, detailed documentation: https://learn.microsoft.com/ru-ru/minecraft/creator/documents/entitybehaviorintroduction?view=minecraft-bedrock-stable
 :::
 
 ### Overwriting via Reference File
